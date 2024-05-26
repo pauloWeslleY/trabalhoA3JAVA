@@ -7,6 +7,10 @@ Compile os arquivos `.java` usando o `javac`:
 ```sh
 javac JokenpoServer.java JokenpoClient.java
 ```
+```sh
+javac GameServer.java GameClient.java
+```
+
 
 ## Passo 2: Inicie o servidor:
 Em janelas de terminal separadas, inicie dois clientes executando o comando abaixo em cada uma delas:
@@ -15,11 +19,19 @@ Em janelas de terminal separadas, inicie dois clientes executando o comando abai
 java JokenpoServer
 ```
 
+```sh
+java GameServer
+```
+
 ## Passo 3: Iniciar o Cliente:
 Em janelas de terminal separadas, inicie dois clientes executando o comando abaixo em cada uma delas:
 
 ```sh
 java JokenpoClient
+```
+
+```sh
+java GameClient
 ```
 
 ### Resumo
