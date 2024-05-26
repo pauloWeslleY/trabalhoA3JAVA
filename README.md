@@ -21,3 +21,11 @@ Em janelas de terminal separadas, inicie dois clientes executando o comando abai
 ```sh
 java JokenpoClient
 ```
+
+### Resumo
+
+1. **Compilar os arquivos Java.**
+2. **Iniciar o servidor.**
+3. **Iniciar dois clientes em terminais separados.**
+
+Com esses passos, você poderá jogar uma partida de Jokenpo entre dois jogadores conectados a um servidor central.
