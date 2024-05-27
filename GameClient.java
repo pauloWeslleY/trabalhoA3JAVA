@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.*;
 
 public class GameClient {
-  private static final String SERVER_ADDRESS = "192.168.100.3";
+  private static final String SERVER_ADDRESS = "localhost";
   private static final int SERVER_PORT = 12345;
 
   public static void main(String[] args) {
