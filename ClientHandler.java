@@ -37,7 +37,15 @@ public class ClientHandler implements Runnable {
                 // based on clientChoice and serverChoice
 
                 // For simplicity, let's just send a random message
-                out.println("You win!");
+                if (clientChoice.equals(serverChoice)) {
+                    out.println("Escolha invalida!");
+                } else if ((clientChoice.equals("rock") && serverChoice.equals("scissors")) ||
+                        (clientChoice.equals("paper") && serverChoice.equals("rock")) ||
+                        (clientChoice.equals("scissors") && serverChoice.equals("paper"))) {
+                    out.println("You win!");
+                } else {
+                    out.println("You lose!");
+                }
             }
 
         } catch (IOException e) {
