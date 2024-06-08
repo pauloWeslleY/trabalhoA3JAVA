@@ -1,13 +1,16 @@
+package jogo1;
+
 import java.io.*;
 import java.net.*;
 
 public class GameClient {
-  private static final String SERVER_ADDRESS = "localhost";
-  private static final int SERVER_PORT = 12345;
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    BufferedReader userIP = new BufferedReader(new InputStreamReader(System.in));
+    String IP = userIP.readLine();
+
     try {
-      Socket socket = new Socket(SERVER_ADDRESS, SERVER_PORT);
+      Socket socket = new Socket(IP, 12345);
       BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
       PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
       BufferedReader console = new BufferedReader(new InputStreamReader(System.in));

@@ -1,3 +1,5 @@
+package jogo1;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -14,6 +16,7 @@ public class GameServer {
     try {
       while (true) {
         Socket clientSocket = serverSocket.accept();
+        System.out.println("New client connected: " + clientSocket);
         GameHandler handler = new GameHandler(clientSocket);
         gameHandlers.add(handler);
         new Thread(handler).start();
